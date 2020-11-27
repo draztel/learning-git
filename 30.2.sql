@@ -31,6 +31,7 @@ BEGIN
             COMMIT;
 		ELSEIF(BESTS != true & BESTS != false) THEN
 			UPDATE BOOKS SET BESTSELLER = FALSE;
+			COMMIT;
 		END IF;
 	END WHILE;
 
